@@ -4,13 +4,24 @@ The most common problems and their solutions on UBUNTU
 
 **PROBLEM 1: NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver**
 
-Solution:
+Solution 1:
 
 	1. sudo apt install --reinstall gcc
 	2. sudo apt-get --purge -y remove 'nvidia*'
-	3  sudo apt install nvidia-driver-450 
+	3. sudo apt install nvidia-driver-450 
 	4. sudo reboot
 
+Solution 2 (Automatic Install using PPA repository to install Nvidia Beta drivers):
+
+	#add the ppa:graphics-drivers/ppa repository into your system
+	1. sudo add-apt-repository ppa:graphics-drivers/ppa
+	#identify your graphic card model and recommended driver: 
+	2. ubuntu-drivers devices
+	#install Nvidia DriverSame as with the above standard Ubuntu repository example, either #install all recommended drivers automatically: 
+	3. sudo ubuntu-drivers autoinstall
+	#or selectively using the apt command. Example: 
+	4. sudo apt install nvidia-driver-470
+	5. sudo reboot
 
 **PROBLEM 2: HOW TO HIDE MOUNTED DRIVES ON THE UBUNTU DOCK**
 
