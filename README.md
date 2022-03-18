@@ -71,7 +71,7 @@ Solution:
 
 	Then write it in the /usr/share/X11/xorg.conf.d/xorg.conf (or possibly /etc/X11/xorg.conf) file (create one, if it does not exist):
 
-	```bash
+	```shell
 	Section "Device"
 	    Identifier  "Configured Video Device"
 	    Driver      "dummy"
