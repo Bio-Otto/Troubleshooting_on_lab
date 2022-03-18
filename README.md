@@ -67,7 +67,9 @@ Solution:
 	
 	Basically install a dummy driverfor creating a virtual dummy monitor as described here:
 
-	- sudo apt-get install xserver-xorg-video-dummy
+	```properties
+	sudo apt-get install xserver-xorg-video-dummy
+	```
 
 	Then write it in the /usr/share/X11/xorg.conf.d/xorg.conf (or possibly /etc/X11/xorg.conf) file (create one, if it does not exist):
 
